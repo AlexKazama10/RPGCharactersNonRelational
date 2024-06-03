@@ -56,12 +56,26 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Characters.sql" />
     <Build Include="Races.sql" />
     <Build Include="Classes.sql" />
     <Build Include="Class_Categories.sql" />
+    <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
+    <Build Include="Alignments.sql" />
+    <Build Include="Backgrounds.sql" />
+    <Build Include="Feature_Types.sql" />
+    <Build Include="Features.sql" />
+    <Build Include="Item_Rarities.sql" />
+    <Build Include="Item_Types.sql" />
+    <Build Include="Items.sql" />
+    <Build Include="Places.sql" />
+    <Build Include="Places_Government_Type.sql" />
+    <Build Include="Spell_Levels.sql" />
+    <Build Include="Spells.sql" />
+    <Build Include="Spells_Schools_of_Magic.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="RPGCharactersNonRelational.refactorlog" />
